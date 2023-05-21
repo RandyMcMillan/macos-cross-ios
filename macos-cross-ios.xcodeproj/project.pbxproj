@@ -13,8 +13,7 @@
 		23728E9B154622C600ED5A71 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 23728E9A154622C600ED5A71 /* main.c */; };
 		23728E9F154622C600ED5A71 /* AppDelegate.c in Sources */ = {isa = PBXBuildFile; fileRef = 23728E9E154622C600ED5A71 /* AppDelegate.c */; };
 		23728EA71546269400ED5A71 /* View.c in Sources */ = {isa = PBXBuildFile; fileRef = 23728EA61546269400ED5A71 /* View.c */; };
-		4B75C6082A19AB5300F05A4B /* CMacsTypes.h in Sources */ = {isa = PBXBuildFile; fileRef = 4B75C6062A19AB5300F05A4B /* CMacsTypes.h */; };
-		4B75C6092A19AB5300F05A4B /* CMacsTypes.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B75C6072A19AB5300F05A4B /* CMacsTypes.c */; };
+		4B754E0B2A1A75C300E079B5 /* CTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B437B322A1A61B100744F94 /* CTypes.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +25,7 @@
 		23728E9A154622C600ED5A71 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		23728E9E154622C600ED5A71 /* AppDelegate.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = AppDelegate.c; sourceTree = "<group>"; };
 		23728EA61546269400ED5A71 /* View.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = View.c; sourceTree = "<group>"; };
-		4B75C6062A19AB5300F05A4B /* CMacsTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CMacsTypes.h; path = "../macos-cross-mac/CMacs/CMacsTypes.h"; sourceTree = "<group>"; };
-		4B75C6072A19AB5300F05A4B /* CMacsTypes.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = CMacsTypes.c; path = "../macos-cross-mac/CMacs/CMacsTypes.c"; sourceTree = "<group>"; };
+		4B437B322A1A61B100744F94 /* CTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CTypes.h; path = "macos-cross-ios/CTypes.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,8 +45,7 @@
 		23728E7F154622C500ED5A71 = {
 			isa = PBXGroup;
 			children = (
-				4B75C6072A19AB5300F05A4B /* CMacsTypes.c */,
-				4B75C6062A19AB5300F05A4B /* CMacsTypes.h */,
+				4B437B322A1A61B100744F94 /* CTypes.h */,
 				23728E94154622C600ED5A71 /* macos-cross-ios */,
 				23728E8D154622C600ED5A71 /* Frameworks */,
 				23728E8B154622C600ED5A71 /* Products */,
@@ -94,11 +91,23 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		4B754E0A2A1A75BD00E079B5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B754E0B2A1A75C300E079B5 /* CTypes.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		23728E89154622C600ED5A71 /* macos-cross-ios */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23728EA2154622C600ED5A71 /* Build configuration list for PBXNativeTarget "macos-cross-ios" */;
 			buildPhases = (
+				4B754E0A2A1A75BD00E079B5 /* Headers */,
 				23728E86154622C600ED5A71 /* Sources */,
 				23728E87154622C600ED5A71 /* Frameworks */,
 				23728E88154622C600ED5A71 /* Resources */,
@@ -159,8 +168,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B75C6082A19AB5300F05A4B /* CMacsTypes.h in Sources */,
-				4B75C6092A19AB5300F05A4B /* CMacsTypes.c in Sources */,
 				23728E9B154622C600ED5A71 /* main.c in Sources */,
 				23728E9F154622C600ED5A71 /* AppDelegate.c in Sources */,
 				23728EA71546269400ED5A71 /* View.c in Sources */,

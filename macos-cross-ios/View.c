@@ -14,7 +14,7 @@ Class ViewClass;
 
 // Notice this. We must create this as an extern function, as we cannot include all
 // of UIKit. This works, but is definitely not optimal.
-extern CGContextRef UIGraphicsGetCurrentContext();
+extern CGContextRef UIGraphicsGetCurrentContext(void);
 
 // This is a simple -drawRect implementation for our class. We could have 
 // used a UILabel  or something of that sort instead, but I felt that this 

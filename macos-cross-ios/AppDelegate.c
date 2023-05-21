@@ -8,7 +8,7 @@
 #include <objc/runtime.h>
 #include <objc/message.h>
 #include <CoreGraphics/CoreGraphics.h>
-#include "CMacsTypes.h"
+#include "CTypes.h"
 
 // This is equivalent to creating a @class with one public variable named 'window'.
 //struct AppDel
